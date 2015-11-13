@@ -1,6 +1,4 @@
-[![logo](http://www.linkideo.com/images/openvpn_logo.jpg)](https://openvpn.net/)
-
-         DDclient
+DDclient
 ==========================
 
 
