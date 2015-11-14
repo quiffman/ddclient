@@ -16,10 +16,10 @@ docker pull mace/ddclient
 ```
 **Container config**
 
-*Rename the sample config to ddclient.conf in the host directory
-*The sample config will be avaible afer the first run
-*Configure Gmail credentials in mail.rxt(avaible after first run) (used as mail relay) Dont forget to setup reciving email address in ddclient.conf
-*For enabling mail theese variables need to be added to the run command "-h ddclient.local" "-v MAIL=yes"
+* Rename the sample config to ddclient.conf in the host directory
+* The sample config will be avaible afer the first run
+* Configure Gmail credentials in mail.txt(avaible after first run), Dont forget to setup reciving email address in ddclient.conf
+* For enabling mail theese variables need to be added to the run command "-h ddclient.local" "-v MAIL=yes"
 
 
 **Run container**
