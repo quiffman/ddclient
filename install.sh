@@ -66,7 +66,7 @@ if [ -f "/etc/cron.d/ddclient" ]; then
   rm /etc/cron.d/ddclient
 fi
 if [ -f "/config/ddclient.conf" ]; then
-  echo '15 04 * * *	root    su nobody -s /bin/bash -c "/usr/sbin/ddclient -daemon=0 -syslog -quiet -force -file /config/ddclient.conf -cache /config/cache/ddclient.cache"' > /etc/cron.d/ddclient
+  echo '15 06 * * 1	root    su nobody -s /bin/bash -c "/usr/sbin/ddclient -daemon=0 -syslog -quiet -force -file /config/ddclient.conf -cache /config/cache/ddclient.cache"' > /etc/cron.d/ddclient
 fi
 # Setting permissions so that host can edit config
 chown -R nobody:users /config
