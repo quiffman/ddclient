@@ -56,6 +56,18 @@ docker run -d --net=none --name=ddclient  --name=ddclient -v /mylocal/directory/
 ```
 
 
+**Add CA Certificates**
+
+For example, download the CACert.org certificates to and mount them in `/usr/local/share/ca-certificates`
+
+```
+cd /mylocal/directory/forcerts
+wget http://www.cacert.org/certs/root.crt http://www.cacert.org/certs/class3.crt
+
+docker run -d --net="bridge" --name=ddclient -e MAIL=yes -v /mylocal/directory/fordata:/config -v /etc/localtime:/etc/localtime:ro -v /mylocal/directory/forcerts:/usr/local/share/ca-certificates:ro quiffman/ddclient
+```
+
+
 **Additional notes**
 
 

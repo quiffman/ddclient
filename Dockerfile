@@ -19,6 +19,8 @@ CMD ["/sbin/my_init"]
 COPY install.sh /tmp/
 RUN chmod +x /tmp/install.sh && sleep 1 && /tmp/install.sh && rm /tmp/install.sh
 
+ADD update-certificates.sh /etc/my_init.d/
+RUN chmod +x /etc/my_init.d/update-certificates.sh
 
 ###############################################
 ##                                        PORTS AND VOLUMES                                            ##
